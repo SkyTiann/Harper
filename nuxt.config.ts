@@ -1,11 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  srcDir: 'src/',
   devtools: { enabled: true },
   alias: {
-    '@/*': "src/*"
+    '@/*': "./*"
   },
-  css: ['~/assets/css/main.css'],
+  css: ['~/assets/css/main.css','~/assets/css/icon.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
