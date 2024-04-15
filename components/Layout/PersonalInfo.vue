@@ -2,7 +2,7 @@
     <div class="bg-[#fff] w-full px-4 py-4 rounded-lg text-center">
         <div class="w-64 lg:w-full inline-block">
             <div class="h-64 overflow-hidden rounded-lg mb-4">
-                <img src="/avatar.jpg" alt="avatar">
+                <!-- <img src="/avatar.jpg" alt="avatar"> -->
             </div>
             <h1 class="font-semibold">テラコッタオレンジ</h1>
             <div class="flex justify-center mt-1 mb-3">
