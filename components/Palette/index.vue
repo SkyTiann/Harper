@@ -1,3 +1,10 @@
 <template>
-    <div class="w-60 h-16 bg-write rounded-lg drop-shadow-lg"></div>
+    <div>
+        <pick-colors v-model:value="value" />
+    </div>
 </template>
+
+<script lang="ts" setup>
+import PickColors from 'vue-pick-colors'
+const value = ref('#ff4500')
+</script>

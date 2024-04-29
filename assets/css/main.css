@@ -2,6 +2,68 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-    --main-bg-color: brown;
+:root,
+:root[mode='light'] {
+    --primary: #53a3f2;
+    --page-bg: #eaeff5;
+    --card-bg: white;
+    --btn-content: #3275b4;
+    --btn-regular-bg: #e2f0ff;
+    --btn-regular-bg-hover: #c6e1ff;
+    --btn-regular-bg-active: #a6d2ff;
+    --btn-plain-bg-hover: #e2f0ff;
+    --btn-plain-bg-active: #f4f9ff;
+    --btn-card-bg-hover: #f6f9fc;
+    --btn-card-bg-active: #d0e0f2;
+    --enter-btn-bg: var(--btn-regular-bg);
+    --enter-btn-bg-hover: var(--btn-regular-bg-hover);
+    --enter-btn-bg-active: var(--btn-regular-bg-active);
+    --deep-text: #1a222b;
+    --title-active: #4f84ba;
+    --line-divider: rgba(0, 0, 0, .08);
+    --line-color: rgba(0, 0, 0, .1);
+    --meta-divider: rgba(0, 0, 0, .2);
+    --inline-code-bg: var(--btn-regular-bg);
+    --inline-code-color: var(--btn-content);
+    --selection-bg: #c6e1ff;
+    --codeblock-selection: #224a71;
+    --codeblock-bg: #11171d;
+    --license-block-bg: rgba(0, 0, 0, .03);
+    --link-underline: #d4ebff;
+    --link-hover: #e2f0ff;
+    --link-active: #c6e1ff;
+    --float-panel-bg: white;
+    --color-selection-bar: linear-gradient(to right, oklch(.8 .1 0), oklch(.8 .1 30), oklch(.8 .1 60), oklch(.8 .1 90), oklch(.8 .1 120), oklch(.8 .1 150), oklch(.8 .1 180), oklch(.8 .1 210), oklch(.8 .1 240), oklch(.8 .1 270), oklch(.8 .1 300), oklch(.8 .1 330), oklch(.8 .1 360));
+    --display-light-icon: 1;
+    --display-dark-icon: 0
+}
+
+:root[mode="dark"] {
+    --primary: #63b3ff;
+    --page-bg: #090e13;
+    --card-bg: #181e24;
+    --btn-content: #7cb3eb;
+    --btn-regular-bg: #283747;
+    --btn-regular-bg-hover: #324457;
+    --btn-regular-bg-active: #3d5268;
+    --btn-plain-bg-hover: #0a1017;
+    --btn-plain-bg-active: #0e141b;
+    --btn-card-bg-hover: #222f3c;
+    --btn-card-bg-active: #2d3c4c;
+    --line-divider: rgba(255, 255, 255, .08);
+    --line-color: rgba(255, 255, 255, .1);
+    --meta-divider: rgba(255, 255, 255, .2);
+    --selection-bg: #224a71;
+    --codeblock-bg: #0a1016;
+    --license-block-bg: var(--codeblock-bg);
+    --link-underline: #224a71;
+    --link-hover: #224a71;
+    --link-active: #1b3c5d;
+    --float-panel-bg: #0f141a;
+    --scrollbar-bg: var(--scrollbar-bg-dark);
+    --scrollbar-bg-hover: var(--scrollbar-bg-hover-dark);
+    --scrollbar-bg-active: var(--scrollbar-bg-active-dark);
+    --color-selection-bar: linear-gradient(to right, oklch(.7 .1 0), oklch(.7 .1 30), oklch(.7 .1 60), oklch(.7 .1 90), oklch(.7 .1 120), oklch(.7 .1 150), oklch(.7 .1 180), oklch(.7 .1 210), oklch(.7 .1 240), oklch(.7 .1 270), oklch(.7 .1 300), oklch(.7 .1 330), oklch(.7 .1 360));
+    --display-light-icon: 0;
+    --display-dark-icon: 1
 }
