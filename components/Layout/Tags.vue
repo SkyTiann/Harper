@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[#fff] w-full px-4 pt-4 pb-1 rounded-lg">
+    <div class="bg-[--card-bg] w-full px-4 pt-4 pb-1 rounded-lg">
         <div class="w-1 h-6 bg-blue-300 rounded-md inline-block mr-3"></div>
         <h1 class="inline-block align-top font-semibold mb-3">Tags</h1>
         <div>

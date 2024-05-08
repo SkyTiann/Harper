@@ -6,30 +6,28 @@
         </a>
         <div class="h-12 w-80 hidden md:flex justify-between">
             <a href="/"
-                class="h-full flex items-center px-2 hover:bg-blue-100 hover:text-blue-400 font-semibold rounded-lg">
+                class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
                 <div>Home</div>
             </a>
             <a href="/"
-                class="h-full flex items-center px-2 hover:bg-blue-100 hover:text-blue-400 font-semibold rounded-lg">
+                class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
                 <div>Archive</div>
             </a>
             <a href="/"
-                class="h-full flex items-center px-2 hover:bg-blue-100 hover:text-blue-400 font-semibold rounded-lg">
+                class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
                 <div>About</div>
             </a>
             <a href="/"
-                class="h-full flex items-center px-2 hover:bg-blue-100 hover:text-blue-400 font-semibold rounded-lg">
+                class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
                 <div>Github</div>
             </a>
         </div>
         <div class="h-12 w-60 flex items-center">
-            <Palette></Palette>
             <Dark></Dark>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-import Palette from '@/components/Palette/index.vue'
 import Dark from '@/components/Dark/index.vue'
 </script>
