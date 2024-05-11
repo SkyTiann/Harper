@@ -5,29 +5,20 @@
             <span class="text-[--primary] font-semibold">Harper</span>
         </a>
         <div class="h-12 w-80 hidden md:flex justify-between">
-            <a href="/"
+            <a v-for="item in Menu" :key="item.title" :href="item.route ? item.route : '/'"
                 class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
-                <div>Home</div>
-            </a>
-            <a href="/"
-                class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
-                <div>Archive</div>
-            </a>
-            <a href="/"
-                class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
-                <div>About</div>
-            </a>
-            <a href="/"
-                class="h-full flex items-center px-2 hover:bg-[--list-item-bg-hover] hover:text-[--primary] font-semibold rounded-lg">
-                <div>Github</div>
+                <div>{{ item.title }}</div>
             </a>
         </div>
-        <div class="h-12 w-60 flex items-center">
+        <div class="h-12 flex items-center gap-5 mr-10">
             <Dark></Dark>
+            <HamburgerMenu></HamburgerMenu>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
 import Dark from '@/components/Dark/index.vue'
+import HamburgerMenu from '@/components/HamburgerMenu/index.vue'
+import { Menu } from '@/constants/menu.constant'
 </script>

@@ -10,7 +10,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors: { 'primary-color': 'var(--primary)' }
+      colors: { 'primary-color': 'var(--primary)' },
     },
   },
   plugins: [],

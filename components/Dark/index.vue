@@ -1,5 +1,5 @@
 <template>
-    <div class="h-10 w-32 relative cursor-pointer rounded-md flex items-center" @click.stop="() => { }">
+    <div class="h-10 relative cursor-pointer rounded-md flex items-center" @click.stop="() => { }">
         <div @click="themeClick">
             <span class="iconfont text-xl mr-1" :class="[icon]"></span>
             <span>Theme</span>
@@ -28,6 +28,7 @@
 import { LocalStorageKeys, Theme } from '@/constants/key.constant'
 const unfold = ref(false)
 const currentTheme = ref('')
+
 const icon = computed(() => {
     const mappingTables = {
         [Theme.OsDefault]: 'icon-gensuixitong-hei',

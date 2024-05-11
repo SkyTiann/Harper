@@ -9,6 +9,7 @@
     --card-bg: white;
     --list-item-bg-hover: rgb(191 219 254 / 1);
     --list-item-bg-active: rgb(191 219 254 / 1);
+    @apply text-slate-700;
 }
 
 :root[mode="dark"] {
